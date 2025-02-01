@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+
+name = input("Enter your name: ")
+
+print(f"Hello Mr {name}")
+print("Hello Mr {}".format(name))
+print("Hello Mr" + name)
