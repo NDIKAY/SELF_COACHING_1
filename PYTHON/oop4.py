@@ -10,7 +10,7 @@ class Person:
         self.date_birth = date_birth
 
     def Calculate_age(self):
-        age = "self.current_year" - "self.date_birth"
+        age = Person.Current_year - self.date_birth
         return age
 Person1 = Person("Adam", "USA", 1995)
 Person2 = Person("Barthez" , "RWANDA", 1992)
@@ -18,7 +18,12 @@ Person2 = Person("Barthez" , "RWANDA", 1992)
 Age1 = Person1.Calculate_age()
 Age2 = Person2.Calculate_age()
 
-print("Age of {self.name} is {Age1}")
-print("Age of {self.name} is {Age1}")
+print(f"Age of {Person1.name} is {Age1}")
+print(f"Age of {Person2.name} is {Age2}")
+print(Person.__doc__)
+print(Person.__dict__)
+print(Person.__name__)
+print(Person.__module__)
+print(Person.__bases__ )
 
 
